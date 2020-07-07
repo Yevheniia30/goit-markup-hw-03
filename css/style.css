@@ -1,0 +1,200 @@
+/*заголовки  h #212121
+  текст p #757575
+  цвет ховер #2196f3
+  белый #ffffff
+  черный #000000
+  studio в хедере#ffffff
+  фон блока команды #f5f4fa
+  фон футера #2f303a
+  контакты и мейл-форма в футере rgba(255, 255, 255, 0.6)*/
+
+:root {
+  --clear-black-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --footer-background: #2f303a;
+  --clear-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --portfolio-projects-bg-color: #eeeeee;
+  --button-hover-color: #188ce8;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --skills-title-bg-color: rgba(47, 48, 58, 0.8);
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--clear-white-color);
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+/* header css */
+.webstudio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.web {
+  color: var(--accent-color);
+}
+.header .webstudio {
+  color: var(--clear-black-color);
+}
+.site-nav-list .link,
+.header-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contacts .link {
+  color: var(--secondary-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.site-nav-list .link.current {
+  color: var(--accent-color);
+}
+
+/* hero css */
+.hero-title {
+  /* color: var(--clear-white-color); */
+  color: var(--clear-black-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-btn,
+.form-btn {
+  color: var(--clear-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--button-hover-color);
+}
+
+/* sections1234 css */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.features .title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .description {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.skills .title {
+  color: var(--clear-white-color);
+  background-color: var(--skills-title-bg-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team {
+  background-color: var(--secondary-bg-color);
+}
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team .description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* footer css */
+.footer {
+  background: var(--footer-background);
+}
+.footer .webstudio {
+  color: var(--clear-white-color);
+}
+.address {
+  color: var(--clear-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts .link {
+  color: var(--footer-link-color);
+}
+.join-in,
+.subscribe {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--clear-white-color);
+}
+
+/* portfolio main css */
+.filter-btn {
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--clear-white-color);
+  background-color: var(--accent-color);
+}
+.portfolio-projects .title {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-projects .subtitle {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+/*.portfolio-projects .description {
+   color: var(--clear-white-color); 
+}*/
+.portfolio-projects .description {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.56;
+}
