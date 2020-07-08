@@ -26,6 +26,13 @@
 html {
   box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--main-font);
   background-color: var(--clear-white-color);
@@ -42,6 +49,10 @@ button {
   font-family: inherit;
   color: inherit;
   letter-spacing: inherit;
+}
+
+.section {
+  margin-bottom: 94px;
 }
 
 /* header css */
