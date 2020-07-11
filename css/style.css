@@ -40,6 +40,8 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -49,10 +51,22 @@ button {
   font-family: inherit;
   color: inherit;
   letter-spacing: inherit;
+  border: 1px solid transparent;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.section {
-  margin-bottom: 94px;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  background-color: aqua;
 }
 
 /* header css */
@@ -67,6 +81,12 @@ button {
 }
 .header .webstudio {
   color: var(--clear-black-color);
+}
+.site-nav,
+.site-nav-list,
+.header-contacts,
+.header .container {
+  display: flex;
 }
 .site-nav-list .link,
 .header-contacts .link {
@@ -88,18 +108,23 @@ button {
 }
 
 /* hero css */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  margin-bottom: 30px;
   /* color: var(--clear-white-color); */
   color: var(--clear-black-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 .modal-btn,
 .form-btn {
+  display: inline-block;
+  min-width: 200px;
   color: var(--clear-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -107,6 +132,14 @@ button {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal-btn {
+  padding: 10px 32px;
+}
+.form-btn {
+  padding: 10px 62px 10px 29px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -114,12 +147,24 @@ button {
 }
 
 /* sections1234 css */
+.section {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+.main .hero {
+  padding-top: 0;
+}
+.main .clients {
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .features .title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -141,6 +186,7 @@ button {
   background-color: var(--secondary-bg-color);
 }
 .team-member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -184,6 +230,7 @@ button {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
