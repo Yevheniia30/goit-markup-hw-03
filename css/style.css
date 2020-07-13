@@ -31,7 +31,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
+/* почему h1 не наследует margin0. а получает от нормалайз?? */
 
 body {
   font-family: var(--main-font);
@@ -40,8 +43,8 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   list-style: none;
 }
 .link {
@@ -53,12 +56,12 @@ button {
   letter-spacing: inherit;
   border: 1px solid transparent;
 }
-h1,
+/* h1, 
 h2,
 h3,
 p {
   margin: 0;
-}
+}*/
 
 .container {
   margin-left: auto;
@@ -166,6 +169,7 @@ p {
   text-align: center;
 }
 .features .title {
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -200,9 +204,30 @@ p {
   line-height: 1.19;
   text-align: center;
 }
-
-.clients .item:nth-child(4) {
+/* когда всем кроме одного */
+.clients .item:not(:nth-child(4)) {
   background-color: var(--accent-color);
+}
+/* n- это 0. который увеличивается на единицу (0+3=3, поэтому свойство начинает применяться с третьего элемента, :nth-child отсчитывает с начала списка, :nth-last-child - с конца */
+.clients .item:nth-last-child(n + 3) {
+  background-color: sienna;
+}
+/* 3n - применение свойства для 3, 6, 9 єлементов по формуле 0*3+3, 1*3+3 и тд */
+.clients .item:nth-child(3n) {
+  background-color: tomato;
+}
+/* применение свойства всем элементам, кроме 3-х с конца */
+.clients .item:not(:nth-last-child(-n +)) {
+  background-color: yellow;
+}
+
+/* когда одному */
+.features .item:nth-child(3) {
+  background-color: seagreen;
+}
+/* всем кроме последненего */
+.features .item:not(:last-child) {
+  background-color: slateblue;
 }
 
 /* footer css */
