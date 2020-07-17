@@ -31,8 +31,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; 
+  padding: 0;*/
 }
 /* почему h1 не наследует margin0. а получает от нормалайз?? */
 
@@ -43,8 +43,8 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -56,12 +56,13 @@ button {
   letter-spacing: inherit;
   border: 1px solid transparent;
 }
-/* h1, 
+h1,
 h2,
 h3,
 p {
   margin: 0;
-}*/
+  padding: 0;
+}
 
 .container {
   margin-left: auto;
@@ -74,6 +75,9 @@ p {
 
 /* header css */
 .webstudio {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 85px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -85,14 +89,31 @@ p {
 .header .webstudio {
   color: var(--clear-black-color);
 }
+.header-container,
 .site-nav,
 .site-nav-list,
-.header-contacts,
-.header .container {
+.header-contacts {
   display: flex;
 }
+.site-nav-list {
+  margin-right: 305px;
+}
+
+.site-nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .site-nav,
+.header-contacts,*/
+
 .site-nav-list .link,
 .header-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
