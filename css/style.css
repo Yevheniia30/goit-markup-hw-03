@@ -271,7 +271,13 @@ img {
   text-align: center;
 }
 .team .list {
-  margin-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+.soc-netw {
+  width: 44px;
+  height: 44px;
 }
 .clients .item {
   /* display: block; */
@@ -373,6 +379,7 @@ img {
 }
 .portfolio-projects .item {
   width: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
 }
 .portfolio-projects .item:not(:nth-child(3n)) {
   margin-right: 30px;
