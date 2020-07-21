@@ -380,7 +380,12 @@ img {
 }
 .portfolio-projects .item {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
+}
+.projects-border {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .portfolio-projects .item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -389,14 +394,13 @@ img {
   margin-bottom: 30px;
 }
 .portfolio-projects .title {
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-projects .subtitle {
-  margin: 0px 24px 20px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
