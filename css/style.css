@@ -270,10 +270,11 @@ img {
   line-height: 1.19;
   text-align: center;
 }
-.team .list {
+.team .soc-netw-list {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 24px;
+  justify-content: space-between;
 }
 .soc-netw {
   width: 44px;
