@@ -279,6 +279,7 @@ img {
 .soc-netw {
   width: 44px;
   height: 44px;
+  overflow: hidden;
 }
 .clients .item {
   /* display: block; */
@@ -300,7 +301,6 @@ img {
 }
 .footer-container {
   display: flex;
-  justify-content: space-between;
 }
 .footer .webstudio {
   margin-top: 60px;
@@ -334,12 +334,20 @@ img {
   text-transform: uppercase;
   color: var(--clear-white-color);
 }
+.wrapper-address {
+  margin-right: 69px;
+}
 .wrapper-join-in,
 .wrapper-subscribe {
   margin-top: 72px;
 }
 .wrapper-join-in {
+  width: 206px;
   margin-bottom: 100px;
+  margin-right: 94px;
+}
+.footer .soc-netw-list {
+  justify-content: space-between;
 }
 .wrapper-subscribe {
   margin-bottom: 94px;
