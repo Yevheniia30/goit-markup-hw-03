@@ -196,6 +196,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* .main .clients { 
   padding-bottom: 94px;
@@ -256,12 +260,14 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .team-member {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.team-info {
+  padding: 30px 32px 24px;
 }
 .team .description {
   margin-bottom: 16px;
@@ -271,9 +277,9 @@ img {
   text-align: center;
 }
 .team .soc-netw-list {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
+  /* padding-left: 32px; */
+  /* padding-right: 32px; */
+
   justify-content: space-between;
 }
 .soc-netw {
@@ -301,15 +307,16 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer .webstudio {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  /* margin-top: 60px; */
+  /* margin-bottom: 20px; */
 
   color: var(--clear-white-color);
 }
 .address {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   color: var(--clear-white-color);
   font-style: normal;
   font-size: 14px;
@@ -337,21 +344,21 @@ img {
 .wrapper-address {
   margin-right: 69px;
 }
-.wrapper-join-in,
+/* .wrapper-join-in, 
 .wrapper-subscribe {
   margin-top: 72px;
-}
+/* } */
 .wrapper-join-in {
   width: 206px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   margin-right: 94px;
 }
 .footer .soc-netw-list {
   justify-content: space-between;
 }
-.wrapper-subscribe {
+/* .wrapper-subscribe { 
   margin-bottom: 94px;
-}
+}*/
 
 /* portfolio main css */
 .filter-btn {
